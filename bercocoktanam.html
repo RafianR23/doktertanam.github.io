@@ -1,0 +1,158 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>dokterTanam</title>
+
+<!-- meta -->
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- /meta -->
+
+<!-- styles -->
+<link href="static/css/modern-business.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="static/css/font-awesome-4.1.0.min.css" />
+<link type="text/css" rel="stylesheet" href="static/css/bootstrap-3.1.1.min.css">
+<link type="text/css" rel="stylesheet" href="static/css/bootstrap-theme-3.1.1.min.css" />
+<link type="text/css" rel="stylesheet" href="static/css/layout.main.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.responsive.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.quickfix.css" />
+<!-- /styles -->
+
+<!-- favicons -->
+<link rel="shortcut icon" href="static/ico/pagelines-brands.png">
+<!-- /favicons -->
+
+<!-- scripts -->
+<script src="static/js/libs/modernizr-2.8.2.min.js"></script>
+<!--[if lt IE 9]><script src="static/js/libs/respond-1.4.2.min.js"></script><![endif]-->
+<!-- /scripts -->
+<style>
+.navbar-fixed-top {
+    min-height: 70px;
+}
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
+    color: #f0524d !important;
+    font-size: 1.4em !important;
+    font-weight: bold;
+}
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
+    color: black !important;
+    font-size: 1.2em !important;
+}
+@media (max-width: 650px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+</style>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="/">dokterTanam
+                    <i class="fa fa-pagelines" aria-hidden="true"></i></p>
+            </div>
+            <div class="collapse navbar-collapse pull-right">
+              <ul class="nav navbar-nav">
+                <li {% if request.endpoint == 'index' %} {% endif %}><a href="index.html">Beranda</a></li>
+                <li {% if request.endpoint == 'Marketplace' %} {% endif %}><a href="hamapenyakit.html">Marketplace</a></li>
+                <li {% if request.endpoint == 'bercocoktanam' %} {% endif %}><a href="bercocoktanam.html">Bercocok Tanam</a></li>
+                <li {% if request.endpoint == 'Tentang' %} {% endif %}><a href="tentang.html">Tentang</a></li>
+  </div>
+</div>
+</div>
+    <main id="content" role="main" class="container">
+        <h3 class="mt-4 mb-3" style="margin-top:3em;margin-bottom:1em;">Bercocok Tanam</h3>
+        <h3 class="mt-4 mb-3" style="margin-top:3em;margin-bottom:1em;">Coming Soon</h3>
+        <p>Pada menu ini kalian akan dilatih bagaimana caranya mengelola lahan pertanian anda dengan benar </p>
+        <div class="row">
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="https://m.kbr.id/media/?size=810x450&filename=benih+padi+mentik+wangi+dan+rajalele_muhammad+ridlo.jpg" alt="...">
+                    <div class="caption">
+                        <h3><strong>Panduan Menanam Padi</strong></h3>
+                        <p>Dalam kursus kali ini kalian akan dilatih bagaimana langkah-langkah untuk menanam dan mearawat padi dengan benar </p>
+                        <p><a href="{{ url_for('blog_padi') }}" class="btn btn-danger" role="button">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="https://ypard.net/sites/ypard.net/files/8%20mistakes.jpg" alt="...">
+                    <div class="caption">
+                        <h3><strong>Panduan menanam tomat</strong></h3>
+                        <p>Dalam kursus kali ini kalian akan dilatih bagaimana langkah-langkah untuk menanam dan mearawat tomat dengan benar</p>
+                        <p><a href="bercocoktanam.html" class="btn btn-danger" role="button">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjB5iNvlh0-XGCAVG8C1XQv8NXC-X32eYbTU9Qf1lM6HPc-u2AQg" alt="...">
+                    <div class="caption">
+                        <h3><strong>Panduan menanam kentang</strong></h3>
+                        <p>Dalam kursus kali ini kalian akan dilatih bagaimana langkah-langkah untuk menanam dan mearawat kentang dengan benar</p>
+                        <p><a href="bercocoktanam.html" class="btn btn-danger" role="button">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_JjaGnruWV2K92iP3It6qfs6-NuGD8UQ-XCMtssThMRK2ekO" alt="...">
+                    <div class="caption">
+                        <h3><strong>Panduan menanam cabai</strong></h3>
+                        <p>Dalam kursus kali ini kalian akan dilatih bagaimana langkah-langkah untuk menanam dan merawat cabai dengan benar</p>
+                        <p><a href="bercocoktanam.html" class="btn btn-danger" role="button">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="http://images.solopos.com/2012/10/singkong.jpg?w=600&h=400" alt="...">
+                    <div class="caption">
+                        <h3><strong>Panduan menanam singkong</strong></h3>
+                        <p>Dalam kursus kali ini kalian akan dilatih bagaimana langkah-langkah untuk menanam dan merawat singkong dengan benar</p>
+                        <p><a href="bercocoktanam.html" class="btn btn-danger" role="button">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="http://3.bp.blogspot.com/-i5wNyq1WBh0/VkqMDrLBPNI/AAAAAAAAAL8/v_tl3667ljo/s1600/kebun%2Bkangkung%2Bdesa%2Btalang%2Bbalai%2Bbaru%2B2%2B-%2Btriyan%2Bwahyudi.JPG" alt="...">
+                    <div class="caption">
+                        <h3><strong>Panduan menanam kangkung</strong></h3>
+                        <p>Dalam kursus kali ini kalian akan dilatih bagaimana langkah-langkah untuk menanam dan merawat kangkung dengan benar</p>
+                        <p><a href="bercocoktanam.html" class="btn btn-danger" role="button">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div id="footer" style="margin-top:3em">
+        <div class="container">
+            <p>DC 101 Lab &copy; All Rights Reserved.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script type="text/javascript" src="static/js/libs/jquery-1.11.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="static/js/libs/bootstrap-3.1.1.min.js" defer></script>
+    <script type="text/javascript" src="static/js/plugins.js" defer></script>
+    <script type="text/javascript" src="static/js/script.js" defer></script>
+</body>
+</html>

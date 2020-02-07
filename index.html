@@ -1,0 +1,148 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>dokterTanam</title>
+
+<!-- meta -->
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- /meta -->
+
+<!-- styles -->
+<link href="static/css/modern-business.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="static/css/font-awesome-4.1.0.min.css" />
+<link type="text/css" rel="stylesheet" href="static/css/bootstrap-3.1.1.min.css">
+<link type="text/css" rel="stylesheet" href="static/css/bootstrap-theme-3.1.1.min.css" />
+<link type="text/css" rel="stylesheet" href="static/css/layout.main.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.responsive.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.quickfix.css" />
+<!-- /styles -->
+
+<!-- favicons -->
+<link rel="shortcut icon" href="static/ico/pagelines-brands.png">
+<!-- /favicons -->
+
+<!-- scripts -->
+<script src="static/js/libs/modernizr-2.8.2.min.js"></script>
+<!--[if lt IE 9]><script src="static/js/libs/respond-1.4.2.min.js"></script><![endif]-->
+<!-- /scripts -->
+<style>
+.navbar-fixed-top {
+    min-height: 70px;
+}
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
+    color: #f0524d !important;
+    font-size: 1.4em !important;
+    font-weight: bold;
+}
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
+    color: black !important;
+    font-size: 1.2em !important;
+}
+.img-responsive-u{
+    height:230px;
+    width: 250px;
+}
+@media (max-width: 650px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+</style>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="/">dokterTanam
+                    <i class="fa fa-pagelines" aria-hidden="true"></i></p>
+            </div>
+            <div class="collapse navbar-collapse pull-right">
+              <ul class="nav navbar-nav">
+                  <li {% if request.endpoint == 'index' %} {% endif %}><a href="index.html">Beranda</a></li>
+                          <li {% if request.endpoint == 'Marketplace' %} {% endif %}><a href="hamapenyakit.html">Marketplace</a></li>
+                          <li {% if request.endpoint == 'bercocoktanam' %} {% endif %}><a href="bercocoktanam.html">Bercocok Tanam</a></li>
+                          <li {% if request.endpoint == 'Tentang' %} {% endif %}><a href="tentang.html">Tentang</a></li>
+            </div>
+        </div>
+    </div>
+
+    <main id="content" role="main" class="container">
+        <div class="row">
+            <div class="col-sm-6" style="margin-top:3em">
+                <img class="img-responsive rounded mb-6" src="https://images.pexels.com/photos/1084540/pexels-photo-1084540.jpeg?cs=srgb&dl=agriculture-botanical-conservatory-1084540.jpg&fm=jpg" alt="">
+            </div>
+            <div class="col-lg-6" style="margin-top:8em">
+                <h1>Membawa Teknologi untuk Petani</h1>
+                <h4 align="center"> Sebuah Solusi Untuk Anda dalam Menyelesaikan Permasalahan di Bidang Pertanian </h4>
+            </div>
+        </div>
+        <div class="row" style="margin-top:3em;">
+            <div class="col-lg-3 mb-3" style="margin-bottom:1em">
+                <div class="card h-50 text-center">
+                    <img class="img-responsive-u" src="https://images.pexels.com/photos/162637/watering-watering-can-man-vietnam-162637.jpeg?cs=srgb&dl=adult-agriculture-backyard-planting-162637.jpg&fm=jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Bercocok Tanam</h4>
+                        <p class="card-text">Mulai belajar bercocok tanam yang baik</p>
+                        <a href="bercocoktanam.html" class="btn btn-danger">Baca</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3" style="margin-bottom:1em;">
+                <div class="card h-50 text-center">
+                    <img class="img-responsive-u" src="https://i.ytimg.com/vi/9UY9Y4iCB08/maxresdefault.jpg" alt="">
+                    <div class="card-body">
+                    <h4 class="card-title">Marketplace </h4>
+                    <p class="card-text">Menyediakan Peralatan dan Perlengkapan</p>
+                    <a href="hamapenyakit.html" class="btn btn-danger">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3" style="margin-bottom:1em;">
+                <div class="card h-50 text-center">
+                    <img class="img-responsive-u" src="https://images.pexels.com/photos/48204/maple-leaf-leaf-autumn-fall-color-48204.jpeg?cs=srgb&dl=close-up-leaf-macro-48204.jpg&fm=jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">NAVA</h4>
+                        <p class="card-text">Aplikasi cek kondisi kesehatan tanaman anda dengan foto daun</p>
+                        <a href="kenalipenyakit.html" class="btn btn-danger">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3" style="margin-bottom:1em">
+                <div class="card h-50 text-center">
+                    <img class="img-responsive-u" src="https://images.pexels.com/photos/630839/pexels-photo-630839.jpeg?cs=srgb&dl=adult-asking-blur-630839.jpg&fm=jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Tanya Ahli</h4>
+                        <p class="card-text">Konsultasikan Permasalahan anda dalam bercocok tanam dengan ahli yang berpengalaman</p>
+                        <a href="jawabanahli.html" class="btn btn-danger">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer" style="margin-top:3em">
+        <div class="container">
+            <p>DC 101 Lab &copy; All Rights Reserved.</p>
+        </div>
+    </div>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script type="text/javascript" src="static/js/libs/jquery-1.11.1.min.js"><\/script>')</script>
+  <script type="text/javascript" src="static/js/libs/bootstrap-3.1.1.min.js" defer></script>
+  <script type="text/javascript" src="static/js/plugins.js" defer></script>
+  <script type="text/javascript" src="static/js/script.js" defer></script>
+</body>
+</html>

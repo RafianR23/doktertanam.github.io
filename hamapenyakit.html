@@ -1,0 +1,165 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>dokterTanam</title>
+
+<!-- meta -->
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- /meta -->
+
+<!-- styles -->
+<link href="static/css/modern-business.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="static/css/font-awesome-4.1.0.min.css" />
+<link type="text/css" rel="stylesheet" href="static/css/bootstrap-3.1.1.min.css">
+<link type="text/css" rel="stylesheet" href="static/css/bootstrap-theme-3.1.1.min.css" />
+<link type="text/css" rel="stylesheet" href="static/css/layout.main.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.responsive.css" />
+<link type="text/css" rel="stylesheet" href="static/css/main.quickfix.css" />
+<!-- /styles -->
+
+<!-- favicons -->
+<link rel="shortcut icon" href="static/ico/pagelines-brands.png">
+<!-- /favicons -->
+
+<!-- scripts -->
+<script src="static/js/libs/modernizr-2.8.2.min.js"></script>
+<!--[if lt IE 9]><script src="static/js/libs/respond-1.4.2.min.js"></script><![endif]-->
+<!-- /scripts -->
+<style>
+.navbar-fixed-top {
+    min-height: 70px;
+}
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
+    color: #f0524d !important;
+    font-size: 1.4em !important;
+    font-weight: bold;
+}
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
+    color: black !important;
+    font-size: 1.2em !important;
+}
+@media (max-width: 650px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+</style>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="/">dokterTanam
+                    <i class="fa fa-pagelines" aria-hidden="true"></i></p>
+            </div>
+            <div class="collapse navbar-collapse pull-right">
+              <ul class="nav navbar-nav">
+                <li {% if request.endpoint == 'index' %} {% endif %}><a href="index.html">Beranda</a></li>
+                <li {% if request.endpoint == 'Marketplace' %} {% endif %}><a href="hamapenyakit.html">Marketplace</a></li>
+                <li {% if request.endpoint == 'bercocoktanam' %} {% endif %}><a href="bercocoktanam.html">Bercocok Tanam</a></li>
+                <li {% if request.endpoint == 'Tentang' %} {% endif %}><a href="tentang.html">Tentang</a></li>
+  </div>
+</div>
+</div>
+    <main id="content" role="main" class="container">
+        <h3 class="mt-4 mb-3" style="margin-top:3em;margin-bottom:1em;">Hama dan Penyakit</h3>
+        <div class="row">
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="img/1.png" alt="...">
+                    <div class="caption">
+                        <h3 align="center">Pupuk Kandang(Rp 20.000,-)</h3>
+                        <p align="center">Berasal Dari Kotoran Hewan</p>
+                        <p><a href="hamapenyakit.html" class="btn btn-danger" role="button">Beli</a></p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="img/2.jpg" alt="...">
+                    <div class="caption">
+                        <h3 align="center"> Pupuk Kompos(Rp 20.000,-)</h3>
+                        <p align="center">Pupuk yang dibuat dari Sisa Tumbuhan.</p>
+                        <p><a href="hamapenyakit.html" class="btn btn-danger" role="button">Beli</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="img/3.jpg" alt="...">
+                    <div class="caption">
+                        <h3 align="center">Pemotong Rumput(Rp 1.000.000,-)</h3>
+                        <p align="center">Digunakan untuk Memotong Rumput</p>
+                        <p><a href="hamapenyakit.html" class="btn btn-danger" role="button">Beli</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4" >
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="img/4.jpg" alt="...">
+                    <div class="caption">
+                        <h3 align="center">Cangkul(Rp 60.000,-)</h3>
+                        <p align="center">Digunakan untuk Membajak Tanah </p>
+                        <p><a href="hamapenyakit.html" class="btn btn-danger" role="button">Beli</a></p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="img/5.jpg" alt="...">
+                    <div class="caption">
+                        <h3 align="center">Penyiram Rumput(Rp 200.000,-)</h3>
+                        <p align="center">Menyiram Rumput Secara Otomatis </p>
+                        <p><a href="hamapenyakit.html" class="btn btn-danger" role="button">Beli</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="" style="height:300px ; width:600px" src="img/6.png" alt="...">
+                    <div class="caption">
+                        <h3 align="center">Traktor(Rp 25.000.000,-)</h3>
+                        <p align="center">Untuk Membajak Sawah.</p>
+                        <p><a href="hamapenyakit.html" class="btn btn-danger" role="button">Beli</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer" style="margin-top:3em">
+        <div class="container">
+            <p>DC 101 Lab &copy; All Rights Reserved.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script type="text/javascript" src="static/js/libs/jquery-1.11.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="static/js/libs/bootstrap-3.1.1.min.js" defer></script>
+    <script type="text/javascript" src="static/js/plugins.js" defer></script>
+    <script type="text/javascript" src="static/js/script.js" defer></script>
+    <!-- Google Analytics - Change UA-XXXXX-X to be your site's ID -->
+    <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+    </script>
+
+</body>
+</html>
